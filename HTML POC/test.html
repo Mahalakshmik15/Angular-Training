@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Country Information</title>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div id="content" hidden>
+        <div id="app">
+            <table id="countryTable">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Capital</th>
+                        <th>Region</th>
+                        <th>Landlocked</th>
+                        <th>Borders</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div id="filters">
+                <label>
+                    <input type="checkbox" id="landlockedCheckbox"> Landlocked
+                </label>
+                <label>
+                    <input type="checkbox" id="notLandlockedCheckbox"> Not Landlocked
+                </label>
+                <label>
+                    <input type="checkbox" id="allCheckbox" checked> All
+                </label>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
