@@ -1,0 +1,6 @@
+<p>{{message}}</p>
+<label for="message-input">Add a Message: </label>
+<input type="text" id="message-input" #newmessage>
+<button (click)="addNewMessage(newmessage.value)">Add</button>
+
+<ng-content></ng-content>

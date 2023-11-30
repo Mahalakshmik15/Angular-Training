@@ -1,0 +1,17 @@
+.app{
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .special {
+    color: red;
+    font-weight: bold;
+    background-color: yellow;
+  }
+   
+  .highlight {
+    color: green;
+  }
+
+
+  

@@ -1,0 +1,29 @@
+
+<div class="app">
+<h1 [ngStyle]="{ 'color': 'red'}" >Welcome to My Angular App</h1>
+
+  
+<a routerLink="/timer"><button>Timer</button></a>
+<a routerLink="/user"><button>User</button></a>
+
+<router-outlet></router-outlet>
+
+<app-angular-component></app-angular-component>
+<app-user-card [userData]="user"(cardClicked)="handleCardClick()"></app-user-card>
+<button type="button"(click)="changeMessage()">Change Message</button>
+<button type="button"(click)="check()">Click me</button>
+
+<app-hooks [message]="message" (messageEvent)="addmessage($event)">
+    <p #temp>User has entered following text:{{message}}</p>
+</app-hooks>
+<button (click)="changeColor()">Change color</button>
+<div [ngClass]="colorChanged? 'special' : 'highlight'">
+    Mahalakshmi Karunanithi
+  </div>
+  <input [(ngModel)]="inputModel" placeholder="How can I help you...">
+<p>{{ inputModel }}</p>
+<ul>
+    <li *ngFor="let message of text">{{ message }}</li>
+  </ul>
+  
+</div>
